@@ -12,7 +12,7 @@
 .hero--image {
   max-width: 35%;
   min-width: 300px;
-  height: auto;
+  max-height: 600px;
   margin-right: 5rem;
 }
 
@@ -31,6 +31,7 @@
   }
   .hero--image {
     min-width: 300px;
+    height: auto;
     margin: -2rem;
     margin-right: 0;
   }
