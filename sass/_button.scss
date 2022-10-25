@@ -1,0 +1,29 @@
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  outline-color: $color-primary;
+  color: $color-secondary;
+  box-shadow: inset 0 0 0 1px $color-secondary;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  /* only necessary  for .btn  */
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+.btn:hover,
+.btn:active {
+  background-color: $color-primary;
+  color: #fff;
+}
+
+@media only screen and (max-width: 428px) {
+  .btn {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,82 @@
+body {
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-weight: bold;
+
+  line-height: 1.7;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+  margin: 50rem;
+  text-align: center;
+
+  @media only screen and (max-width: 1478px) {
+    margin: 5rem;
+    font-size: 1rem;
+  }
+}
+
+.headeing-primary {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 10rem;
+  // padding: 2rem 8rem 2rem 2rem;
+
+  background: #fff;
+  border-radius: 50px;
+  color: $color-secondary;
+  // border: 2px solid $color-primary;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  span {
+    color: $color-primary;
+  }
+}
+
+.heading-secondary {
+  font-size: 5rem;
+  color: $color-secondary;
+  border-bottom: 2px solid $color-secondary;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1394px) {
+  .headeing-primary {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: 5rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 50px;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .headeing-primary {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (max-width: 1478px) {
+  .text {
+    padding: 1rem;
+    margin: 0;
+  }
+  .heading-secondary {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .heading-secondary {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,119 @@
+.menu {
+  margin: 0 auto;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  width: 100%;
+  position: relative;
+}
+
+.margin-none {
+  margin: 0;
+}
+.swiper {
+  max-width: 950px;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: $color-primary;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+
+section .card .image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  padding: 3px;
+  background: transparent;
+  overflow: hidden;
+}
+
+section .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid $color-secondary;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+section .card .image img:hover {
+  transform: scale(1.1);
+}
+.card .name-discription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: $color-secondary;
+  border-bottom: 1px solid $color-primary;
+}
+
+.name-discription .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-discription .discription {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.swiper-pagination {
+  position: absolute;
+}
+
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: $color-primary;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.7;
+  color: $color-primary;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+  color: $color-accent;
+}
+
+@media only screen and (max-width: 1030px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .swiper {
+    max-width: 300px;
+  }
+}

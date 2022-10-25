@@ -1,0 +1,49 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+#location {
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}
+.map-section {
+  width: 80%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.map-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.map-heading {
+  font-size: 2.3rem;
+  color: $color-primary;
+}
+.paragraph {
+  font-size: 1.5rem;
+  color: $color-secondary;
+  margin-bottom: 3rem;
+}
+#map {
+  width: 100%;
+  height: 400px;
+  min-height: 200px;
+  // margin: 0 auto;
+}
+
+@media only screen and (max-width: 750px) {
+  .map-section {
+    padding: 0;
+  }
+  .map-heading {
+    font-size: 1.5rem;
+  }
+  .paragraph {
+    font-size: 1.2rem;
+  }
+}

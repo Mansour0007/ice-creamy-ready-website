@@ -1,0 +1,50 @@
+.footer {
+  width: 100%;
+  min-width: 337px;
+  background: url(/images/footerbackground-DESKTOP-JPPUNSI.webp);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.logo--small {
+  width: 100px;
+  height: 100px;
+}
+.copyright {
+  font-size: 2rem;
+  text-align: center;
+  color: $color-secondary;
+
+  span {
+    color: black;
+  }
+}
+.devloper {
+  font-size: 2rem;
+  text-align: center;
+
+  a {
+    color: black;
+  }
+}
+.footer-social-icon {
+  color: $color-secondary;
+  transition: all 0.3s;
+}
+.footer-social-icon:hover {
+  color: blue;
+  transform: scaleY(1.1);
+}
+@media only screen and (max-width: 420px) {
+  .footer {
+    padding-top: 1rem;
+  }
+  .devloper {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,176 @@
+.navbar {
+  width: 100%;
+  margin: 0 0 2rem 0;
+  padding: 4rem;
+  background: $color-secondary;
+  // background: url(/images/bottom-banner-01.png);
+  // background-position: left;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 9999;
+
+  @include respond(tab-land) {
+    font-size: 200;
+    padding: 2rem;
+  }
+
+  &__social-work-hours {
+    display: flex;
+    justify-content: space-between;
+    gap: 90rem;
+
+    .work-hours {
+      font-size: small;
+      color: black;
+    }
+    @include respond(tab-land) {
+      display: none;
+    }
+  }
+}
+.socail-links__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+
+  a {
+    display: block;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.navigation {
+  border: 1px solid $color-secondary;
+  max-width: 55rem;
+  padding: 2rem;
+  border-radius: 5rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 7rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  @include respond(phone) {
+    padding: 0.5rem;
+    flex-direction: column;
+    top: 250%;
+  }
+  @include respond(tab-land) {
+    margin-top: 3rem;
+    top: 40px;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 8rem;
+    list-style: none;
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__menu--item {
+    position: relative;
+
+    a {
+      text-decoration: none;
+      font-size: small;
+      color: black;
+      transition: all 0.2s;
+    }
+    a:hover {
+      color: $color-secondary;
+    }
+  }
+}
+
+.logo {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  @include respond(phone) {
+    position: initial;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+  }
+}
+.ml {
+  padding-left: 5px;
+}
+.navigation-small {
+  border: 1px solid $color-secondary;
+  min-width: 30rem;
+  min-height: 20rem;
+  padding: 2rem;
+  border-radius: 5rem;
+  background: #ffffff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+
+    &--item {
+      position: relative;
+
+      a {
+        text-decoration: none;
+        font-size: small;
+        color: black;
+        transition: all 0.2s;
+      }
+      a:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+}
+.logo--smallscreen {
+  width: 90px;
+}
+
+@media only screen and (max-width: 1076px) {
+  .navbar {
+    padding: 15rem;
+  }
+  .navigation {
+    display: none;
+  }
+  .navigation-small {
+    display: flex;
+    border-radius: 3rem;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .navbar {
+    margin-bottom: 5rem;
+  }
+}

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="آيس كريمي لبيع المثلجات" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- A favicon image  -->
+    <link rel="icon" type="image/x-icon" href="/images/icecreamylogo.webp" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <script
+      src="https://kit.fontawesome.com/ab6113ac0a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>آيس كريمي لبيع المثلجات</title>
+  </head>
+  <body>
+    <main class="main">
+      <!-- Start navbar -->
+      <div role="navigation" class="navbar">
+        <!-- social links and working hours -->
+        <div class="navbar__social-work-hours">
+          <!-- <div class="socail-links">
+            <ul class="socail-links__icons">
+              <li>
+                <a href="#"><i class="fab fa-snapchat"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="https://wa.me/966591764459 " target="_blank"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div> -->
+          <div class="work-hours">
+            <small
+              ><i class="far fa-clock ml"></i>أوقات العمل: الأحد-السبت 6.00
+              صباحا- 11.00مساء
+            </small>
+          </div>
+        </div>
+        <!-- End of social links and working hours -->
+
+        <!-- Start navigation -->
+        <nav class="navigation">
+          <ul class="navigation__menu">
+            <li class="navigation__menu--item"><a href="#hero">الرئيسية</a></li>
+            <li class="navigation__menu--item">
+              <a href="#about">نبذة عنا</a>
+            </li>
+            <li class="navigation__menu--item">
+              <img
+                src="/images/icecreamylogo1.webp"
+                alt="logo image"
+                class="logo"
+              />
+            </li>
+            <li class="navigation__menu--item"><a href="#call">اتصل بنا</a></li>
+            <li class="navigation__menu--item">
+              <a href="#location">موقعنا </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Start nav for small screen -->
+        <nav class="navigation-small">
+          <ul class="navigation-small__menu">
+            <li class="navigation-small__menu--item">
+              <img
+                src="/images/icecreamylogo1.webp"
+                alt="logo image"
+                class="logo--smallscreen"
+              />
+            </li>
+
+            <li class="navigation-small__menu--item">
+              <a href="#hero">الرئيسية</a>
+            </li>
+            <li class="navigation-small__menu--item">
+              <a href="#about">نبذة عنا</a>
+            </li>
+            <li class="navigation-small__menu--item">
+              <a href="#call">اتصل بنا</a>
+            </li>
+            <li class="navigation-small__menu--item">
+              <a href="#location">موقعنا </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end  nav for small screen -->
+        <!-- End of navigation -->
+      </div>
+      <!-- End of navbar -->
+
+      <!-- Start of hero -->
+      <section id="hero" class="hero">
+        <img
+          src="/images/hero-image-transparent.webp"
+          alt="Snow"
+          class="hero--image"
+        />
+
+        <h1 class="headeing-primary">
+          <span>آيس كريمي </span> متخصص في بيع جميع انواع الآيس كريم السوفت
+          والجيلاتو الإيطالي
+          <a href="#menu" class="btn">اعرف المزيد &darr;</a>
+        </h1>
+      </section>
+      <!-- End of hero -->
+
+      <!-- start of about us -->
+      <section id="about" class="about">
+        <div class="text">
+          <h2 id="learnmore" class="heading-secondary">
+            نبذة عن آيس كريمي <i class="fa-solid fa-ice-cream"></i>
+          </h2>
+          <p class="about__paragraph">
+            يقدم متجر آيس كريمي نكهات متنوعة بأفضل جودة, ونبدع في ابتكار النكهات
+            الجديدة.
+          </p>
+          <p class="about__paragraph">
+            نوفر أنواع متعددة من الآيسكريم المحبب للجميع سواء آيسكريم السوفت
+            بنكهاته المختلفة أو الجيلاتو <br />
+            المتنوع الغني بأنواع الفواكه المتعددة والشوكولاتة اللذيذة.
+          </p>
+        </div>
+      </section>
+      <!-- end of about us section -->
+      <!-- start of menu section -->
+      <section id="menu" class="menu">
+        <div class="text margin-none">
+          <h2 class="heading-secondary">
+            بعض من منتجاتنا <i class="fa-solid fa-ice-cream"></i>
+          </h2>
+        </div>
+        <div class="swiper mySwiper container-Swiper">
+          <div class="swiper-wrapper content">
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="/images/products-images/caramel.webp"
+                    alt="ice cream caramel image"
+                  />
+                </div>
+
+                <div class="name-discription">
+                  <span class="name">كراميل</span>
+                  <span class="discription">جيلاتو بنكهة الكراميل</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="/images/products-images/chocolate.webp"
+                    alt="ice cream chocolate image"
+                  />
+                </div>
+
+                <div class="name-discription">
+                  <span class="name">شوكولاته</span>
+                  <span class="discription">جيلاتو بنكهة الشوكولاته</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="/images/products-images/coffee.webp"
+                    alt="ice cream coffee image"
+                  />
+                </div>
+
+                <div class="name-discription">
+                  <span class="name">القهوة</span>
+                  <span class="discription">جيلاتو بنكهة القهوة</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="/images/products-images/kiwi.webp"
+                    alt="ice cream kiwi image"
+                  />
+                </div>
+
+                <div class="name-discription">
+                  <span class="name">كيوي</span>
+                  <span class="profession">جيلاتو بنكهة الكيوي</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="/images/products-images/mango-main.webp"
+                    alt="ice cream mango image"
+                  />
+                </div>
+
+                <div class="name-discription">
+                  <span class="name">مانجو</span>
+                  <span class="discription">جيلاتو بنكهة المانجو</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="/images/products-images/Mixed-Berry.webp"
+                    alt="ice cream mixed berry image"
+                  />
+                </div>
+
+                <div class="name-discription">
+                  <span class="name">توت</span>
+                  <span class="discription">جيلاتو بنكهة التوت</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="/images/products-images/Passion-fruit-ice-cream.webp"
+                    alt="ice cream passion fruit image"
+                  />
+                </div>
+
+                <div class="name-discription">
+                  <span class="name">باشن فروت</span>
+                  <span class="discription">جيلاتو بنكهة باشن فروت</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="/images/products-images/strwberry.webp"
+                    alt="ice cream strwberry image"
+                  />
+                </div>
+
+                <div class="name-discription">
+                  <span class="name">فراولة</span>
+                  <span class="discription">جيلاتو بنكهة الفراولة</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="/images/products-images/stripped-with-berries.webp"
+                    alt="ice cream stripped berries image"
+                  />
+                </div>
+
+                <div class="name-discription">
+                  <span class="name">مقلم بالتوت</span>
+                  <span class="discription">جلاتو مقلم بالتوت</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="/images/products-images/tangerine.webp"
+                    alt="ice cream tangerine image"
+                  />
+                </div>
+
+                <div class="name-discription">
+                  <span class="name">يوسفي</span>
+                  <span class="discription">جيلاتو بنكهة اليوسفي</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <!-- end of menu section -->
+
+      <!-- Start of call section  -->
+      <section id="call" class="call">
+        <div class="call__wrapper">
+          <div class="call__wrapper--image">
+            <img
+              src="/images/littlegirlwithice.webp"
+              class="call--image"
+              style="max-width: 100%"
+              alt="little girl with ice cream"
+            />
+          </div>
+          <div class="call__wrapper--contact">
+            <p class="call--paragraph">
+              انـعـش يـومـك .. اطـلـب من <span> آيس كريمي </span> تستطيع
+              الإختيار من تشكيلة نكهات الطعم الذي تحبه, يمكنك التواصل عن طريق
+              رقم الواتساب أو السناب شات
+            </p>
+            <div class="icons-wrapper">
+              <div class="whatsapp">
+                <i class="fa-brands fa-whatsapp font-whatsapp"></i>
+                <a
+                  class="whatsapp__link"
+                  href="https://wa.me/966591764459 "
+                  target="_blank"
+                >
+                  <span>0591764459</span></a
+                >
+              </div>
+              <div class="snapchat">
+                <img
+                  id="myImg"
+                  src="/images/snapchatbarcode.webp"
+                  alt="آيس كريمي"
+                  style="width: 30%; max-width: 200px"
+                />
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01" />
+                  <div id="caption"></div>
+                </div>
+                <a class="snapchat__link" href="# " target="_blank">
+                  <span>mansour0_007</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End of call section  -->
+
+      <!-- Start of Map section  -->
+      <section id="location" class="map-section">
+        <div class="map-text">
+          <h2 class="map-heading">العنوان</h2>
+          <p class="paragraph">بجانب المسجد الجامع الأعلى و تموينات سفن دايز</p>
+        </div>
+
+        <div id="map"></div>
+      </section>
+      <!-- end of Map section  -->
+
+      <!-- Start Footer section  -->
+      <footer class="footer">
+        <img
+          src="/images/icecreamylogo1.webp"
+          alt="logo image"
+          class="logo--small"
+        />
+        <div class="footer__social-work-hours">
+          <div class="socail-links">
+            <ul class="socail-links__icons">
+              <li>
+                <a href="#myImg"
+                  ><i class="fab fa-snapchat footer-social-icon"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="https://wa.me/966591764459 " target="_blank"
+                  ><i class="fab fa-whatsapp footer-social-icon"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="work-hours">
+            <small
+              ><i class="far fa-clock ml"></i>أوقات العمل: الأحد-السبت 6.00
+              صباحا- 11.00مساء
+            </small>
+          </div>
+          <div class="copyright">
+            <span>&copy;</span> <small>آيس كريمي </small>
+          </div>
+          <div class="devloper">
+            <p>
+              تصميم وبرمجة
+              <a href="https://twitter.com/almalki_mm9191" target="_blank"
+                >❤️منصور</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz_CcAPV18z3f8cM0Uyji06mJq1pkPAiA&callback=initMap"
+    ></script>
+
+    <!-- <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+          defer
+        ></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script></script>
+    <script src="script.js"></script>
+  </body>
+</html>
