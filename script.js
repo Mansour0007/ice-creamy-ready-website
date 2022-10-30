@@ -1,13 +1,5 @@
-// navigation transparent
-// $(window).scroll(function () {
-//   if ($(window).scrollTop() >= 50) {
-//     $(".navigation").css("background", "transparent");
-//   } else {
-//     $(".navigation").css("background", "#fff");
-//   }
-// });
+"use strict";
 
-/////////////////////////////////////////////////////
 //  Initialize Swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
