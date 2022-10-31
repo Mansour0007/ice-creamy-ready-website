@@ -526,6 +526,14 @@ section .card .image img:hover {
   .swiper {
     max-width: 300px; } }
 
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -7rem;
+  margin-bottom: 3rem;
+  font-size: 1.3rem; }
+
 .call {
   width: 100%;
   max-height: 60vh;
