@@ -1,4 +1,16 @@
 "use strict";
+//// aos animation
+AOS.init();
+
+let nav = document.querySelector("nav");
+
+window.addEventListener("scroll", function () {
+  if (this.window.pageYoffset > 100) {
+    nav.classList.add("bg-dark", "shadow");
+  } else {
+    nav.classList.remove("bg-dark", "shadow");
+  }
+});
 
 //  Initialize Swiper
 var swiper = new Swiper(".mySwiper", {

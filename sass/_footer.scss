@@ -10,10 +10,23 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
+  &__social-work-hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .logo--small {
   width: 100px;
   height: 100px;
+}
+.socail-links__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
 }
 .copyright {
   font-size: 2rem;
@@ -25,11 +38,15 @@
   }
 }
 .devloper {
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-align: center;
 
   a {
     color: black;
+    font-size: 1.2rem;
+  }
+  a:hover {
+    border-bottom: 1px solid black;
   }
 }
 .footer-social-icon {
@@ -37,7 +54,7 @@
   transition: all 0.3s;
 }
 .footer-social-icon:hover {
-  color: blue;
+  color: black;
   transform: scaleY(1.1);
 }
 @media only screen and (max-width: 420px) {

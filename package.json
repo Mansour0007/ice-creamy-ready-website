@@ -23,6 +23,7 @@
     "postcss-cli": "^10.0.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "jquery": "^3.6.1"
   }
 }

@@ -25,17 +25,34 @@ body {
   font-size: 4rem;
   font-weight: 700;
   margin-left: 10rem;
-  // padding: 2rem 8rem 2rem 2rem;
-
-  background: #fff;
+  padding: 10rem 8rem 2rem 2rem;
+  position: absolute;
+  left: 0;
+  right: 60%;
+  background: transparent;
   border-radius: 50px;
-  color: $color-secondary;
+  color: #fff;
   // border: 2px solid $color-primary;
   // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   span {
-    color: $color-primary;
+    // color: $color-primary;
+    color: $color-secondary;
   }
+}
+.heading-supbanner {
+  max-width: 25%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: rgb(82, 82, 82);
+  position: absolute;
+  top: 260px;
+  left: 35%;
+  transform: translate(-29%, -200px);
 }
 
 .heading-secondary {
@@ -54,16 +71,30 @@ body {
     border-radius: 50px;
   }
 }
+@media only screen and (max-width: 724px) {
+  .headeing-primary {
+    padding: 5rem;
+    position: initial;
+    color: #111;
+    margin-left: 0;
+  }
+  .heading-supbanner {
+    font-size: 1.5rem;
+  }
+}
 @media only screen and (max-width: 428px) {
   .headeing-primary {
+    position: initial;
     font-size: 2rem;
     font-weight: 700;
     margin-left: 0.5rem;
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 15px;
   }
+  .heading-supbanner {
+    top: 225px;
+  }
 }
-
 @media only screen and (max-width: 1478px) {
   .text {
     padding: 1rem;
@@ -72,6 +103,20 @@ body {
   .heading-secondary {
     font-size: 3rem;
     margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 1478px) {
+  .text {
+    padding: 1rem;
+    margin: 0;
+  }
+  .heading-secondary {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .heading-supbanner {
+    font-size: 3.5rem;
+    flex-wrap: wrap;
   }
 }
 
