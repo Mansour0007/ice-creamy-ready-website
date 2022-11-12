@@ -181,6 +181,15 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
+.reveal {
+  position: relative;
+  transform: translateY(20px);
+  opacity: 0; }
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1; }
+
 .btn,
 .btn:link,
 .btn:visited {
