@@ -2,29 +2,6 @@
 //// aos animation
 AOS.init();
 
-// leflet map
-
-var map = L.map("map").setView([17.3365, 43.13829], 20);
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 19,
-  attribution:
-    '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-}).addTo(map);
-var greenIcon = L.icon({
-  iconUrl: "/images/transparent.png",
-  // shadowUrl: "transparent.png",
-
-  iconSize: [30, 70], // size of the icon
-
-  iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
-
-  popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
-});
-var marker = L.marker([17.3365, 43.13829], { icon: greenIcon }).addTo(map);
-marker
-  .bindPopup("<b>أهلا وسهلا</b><br>  هنا آيس كريمي لبيع المثلجات")
-  .openPopup();
-
 //  Initialize Swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
@@ -110,29 +87,29 @@ span.onclick = function () {
 
 // let map;
 
-// function initMap() {
-//   let options = {
-//     zoom: 18,
-//     center: { lat: 17.336432, lng: 43.13832 },
-//   };
-//   let map = new google.maps.Map(document.getElementById("map"), options);
+function initMap() {
+  let options = {
+    zoom: 18,
+    center: { lat: 17.336432, lng: 43.13832 },
+  };
+  let map = new google.maps.Map(document.getElementById("map"), options);
 
-//   let marker = new google.maps.Marker({
-//     position: { lat: 17.336432, lng: 43.13832 },
-//     map: map,
-//   });
+  let marker = new google.maps.Marker({
+    position: { lat: 17.336432, lng: 43.13832 },
+    map: map,
+  });
 
-//   let contentString = "<h1>آيس كريمي لبيع المثلجات</h1>";
+  let contentString = "<h1>آيس كريمي لبيع المثلجات</h1>";
 
-//   let infowindow = new google.maps.InfoWindow({
-//     content: contentString,
-//     ariaLabel: "<h1>آس كريمي لبيع المثلجات</h1>",
-//   });
+  let infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    ariaLabel: "<h1>آس كريمي لبيع المثلجات</h1>",
+  });
 
-//   marker.addListener("click", () => {
-//     infowindow.open({
-//       anchor: marker,
-//       map,
-//     });
-//   });
-// }
+  marker.addListener("click", () => {
+    infowindow.open({
+      anchor: marker,
+      map,
+    });
+  });
+}
